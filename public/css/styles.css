@@ -5,19 +5,19 @@ body {
     margin:auto; 
 
     display: flex;
-    flex-direction: column;  /* this */
-    min-height: 100vh;     /* this */
+    flex-direction: column;  
+    min-height: 100vh;     
 }
 
 .main-content{
-    flex-grow: 1;  /* and this are used to push down the created by elie(footer) of course after puting our main data in div(excluding footer)   */
+    flex-grow: 1; 
 }
 
 footer {
     color: #888888;
     border-top: 1px solid #eeeeee;
-    margin-top: 16px;       /* puts space between the things (text) outside the blue and the blue box itself */
-    padding: 16px 0; /* padding put spaces between edges of the blue and the text inside the blue box */
+    margin-top: 16px;       
+    padding: 16px 0; 
 
 }
 
