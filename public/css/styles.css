@@ -1,0 +1,62 @@
+body {
+    color: #333333;
+    width:625px;
+    font-family: arial;
+    margin:auto; 
+
+    display: flex;
+    flex-direction: column;  /* this */
+    min-height: 100vh;     /* this */
+}
+
+.main-content{
+    flex-grow: 1;  /* and this are used to push down the created by elie(footer) of course after puting our main data in div(excluding footer)   */
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;       /* puts space between the things (text) outside the blue and the blue box itself */
+    padding: 16px 0; /* padding put spaces between edges of the blue and the text inside the blue box */
+
+}
+
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {                                               /* only on links in header */
+
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+
+}
+
+.portrait{               /* so we use it on our specific image => go and name it there class="portrait" */
+    width:500px;
+}
+
+input{
+
+    border: 1px solid #cccccc;
+    padding:8px;
+
+
+}
+
+button{
+     cursor:pointer;
+     border:1px solid #888888;
+     background: #888888;
+     color:white;
+     padding: 8px;
+
+}
+

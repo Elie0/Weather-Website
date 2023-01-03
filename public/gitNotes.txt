@@ -1,0 +1,13 @@
+1-) initialize git in your main project where you require all files so in C:\Users\eliea\Desktop\NEW-NODE\WebServer : write git init
+
+2-) the green points on the left of the files, shows the files that has not been yet commited (untracked)
+
+3-) we dont want git to track node_modules so we create a file called .gitignore in the WebServer
+
+4-) inside .gitignore we write: node_modules/ so it wont track it anymore
+
+5-) if now i write git status command, i wont see node modules inside
+
+6-) Now to track files write git add name/ => example: git add src/
+
+7-) Now to add everything just write git add .
