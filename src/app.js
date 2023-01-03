@@ -6,6 +6,7 @@ const geocode = require('./utils/geocode')
 
 
 const app = express()
+const PORT = process.env.PORT || 3030
 
 
 
@@ -116,7 +117,7 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000, () =>{
+app.listen(PORT, () =>{
     console.log('server is up on port 3000')
 })  
 
