@@ -11,7 +11,7 @@
     "hbs": "^4.2.0",
     "postman-request": "^2.88.1-postman.31"
   },
-  "main": "index.js",
+  "main": "src/app.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
