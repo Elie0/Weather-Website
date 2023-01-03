@@ -6,8 +6,7 @@ const geocode = require('./utils/geocode')
 
 
 const app = express()
-// __dirname = C:\Users\eliea\Desktop\NEW-NODE\WebServer\src
-//    \.. used to go back a folder
+
 
 
 // define paths for express config
@@ -16,12 +15,9 @@ const viewspath = path.join(__dirname,'../templates/views')
 const partialsPath =  path.join(__dirname,'../templates/partials')
 
 //Set up handlebars engine nd views location
-app.set('view engine','hbs') // make sure you run project from source if did not use the preceding line app.set
+app.set('view engine','hbs') 
 app.set('views',viewspath)
 hbs.registerPartials(partialsPath)
-
-//set up static directory to serve
-app.use(express.static(path.join(publicDirPath)))
 
 app.get('',(req,res)=>{
     res.render('index',  {
@@ -82,7 +78,7 @@ app.get('/Weather',(req,res)=>{
            return res.send({error})
         }
 
-    forecast(/*datacallback.latitude*/latitude,longitude, (error, data) => {
+    forecast(latitude,longitude, (error, data) => {
 
         if(error)
       {
@@ -126,5 +122,4 @@ app.listen(3000, () =>{
 
 
 
-//For Dynamic templating, use npm i hbs ( it is an easy verion of handlebars used by express, so you could use it on the app = express() directly)
-// app.set('view engine','hbs')
+
