@@ -33,7 +33,7 @@ app.get('/about',(req,res)=>{
     res.render('about',{
         link: '/img/pic.webp',
         title: 'About Me: ',
-        name: 'elie bek'
+        name: 'Elie Alarou'
     })
 })
 
@@ -42,7 +42,7 @@ app.get('/help',(req,res)=>{
     res.render('help',{
         message : 'enter your message help here!',
         title: 'Help Page!',
-        name:'elie bek'
+        name:'Elie Alarou'
     })
 })
 
@@ -107,7 +107,7 @@ app.get('/help/*',(req,res)=>{
     res.render('helperror',{
         title:"Help",
         errormsg:"Help article not found",
-        name:'elie bek'
+        name:'Elie alarou'
     })
 })
 
@@ -116,7 +116,7 @@ app.get('*',(req,res)=>{
     res.render('404',{
         errormsg: "Page not found!",
         title: "404",
-        name:'elie bek'
+        name:'Elie alarou'
     })
 })
 
